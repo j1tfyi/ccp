@@ -147,7 +147,7 @@ Or
 **All Rights Reserved**
 - Demonstration purposes only
 - Unauthorized reproduction or distribution prohibited
-- No license granted without explicit permission
+- No licenses granted without explicit permission
 
 ## 📚 Documentation & Resources
 
