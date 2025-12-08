@@ -74,7 +74,7 @@ deBridge enables:
 
 ### Supported Networks
 
-**25+ Total Networks**
+**27 Total Networks**
 
 #### EVM Chains (24 chains):
 1. Abstract
