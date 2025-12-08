@@ -76,7 +76,7 @@ deBridge enables:
 
 **25+ Total Networks**
 
-#### EVM Chains (22 chains):
+#### EVM Chains (24 chains):
 1. Abstract
 2. Arbitrum
 3. Avalanche (C-Chain)
@@ -89,21 +89,23 @@ deBridge enables:
 10. Gnosis
 11. HyperEVM
 12. Hyperliquid
-13. Linea
-14. Mantle
-15. Neon
-16. Optimism
-17. Plasma
-18. Polygon (MATIC)
-19. Sei
-20. Sonic
-21. Story
-22. Zilliqa
+13. Injective
+14. Linea
+15. Mantle
+16. Monad
+17. Neon
+18. Optimism
+19. Plasma
+20. Polygon (MATIC)
+21. Sei
+22. Sonic
+23. Story
+24. Zilliqa
 
 #### Non-EVM Chains (3 chains):
-23. Solana
-24. xStocks via Solana
-25. Tron
+25. Solana
+26. xStocks via Solana
+27. Tron
 
 ## 📦 Development Setup
 

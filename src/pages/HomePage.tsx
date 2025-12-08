@@ -22,8 +22,10 @@ import flowLogo from '../assets/networks/flow.png';
 import gnosisLogo from '../assets/networks/gnosis.png';
 import hyperevmLogo from '../assets/networks/hyperevm.png';
 import hyperliquidLogo from '../assets/networks/hyperliquid.png';
+import injectiveLogo from '../assets/networks/injective.png';
 import lineaLogo from '../assets/networks/linea.png';
 import mantleLogo from '../assets/networks/mantle.png';
+import monadLogo from '../assets/networks/monad.png';
 import neonLogo from '../assets/networks/neon.png';
 import optimismLogo from '../assets/networks/optimism.png';
 import plasmaLogo from '../assets/networks/plasma.png';
@@ -760,6 +762,11 @@ export default function HomePage() {
               <img src={hyperliquidLogo} alt="Hyperliquid logo" className="w-12 h-12 mb-4" />
               <h3 className="text-xl font-semibold text-white">Hyperliquid</h3>
             </Card>
+            {/* Injective */}
+            <Card className="p-6 flex flex-col items-center bg-black/80 backdrop-blur-sm border border-white/10 hover:scale-105 transition-transform hover:bg-black/90">
+              <img src={injectiveLogo} alt="Injective logo" className="w-12 h-12 mb-4" />
+              <h3 className="text-xl font-semibold text-white">Injective</h3>
+            </Card>
             {/* Linea */}
             <Card className="p-6 flex flex-col items-center bg-black/80 backdrop-blur-sm border border-white/10 hover:scale-105 transition-transform hover:bg-black/90">
               <img src={lineaLogo} alt="Linea logo" className="w-12 h-12 mb-4" />
@@ -769,6 +776,11 @@ export default function HomePage() {
             <Card className="p-6 flex flex-col items-center bg-black/80 backdrop-blur-sm border border-white/10 hover:scale-105 transition-transform hover:bg-black/90">
               <img src={mantleLogo} alt="Mantle logo" className="w-12 h-12 mb-4" />
               <h3 className="text-xl font-semibold text-white">Mantle</h3>
+            </Card>
+            {/* Monad */}
+            <Card className="p-6 flex flex-col items-center bg-black/80 backdrop-blur-sm border border-white/10 hover:scale-105 transition-transform hover:bg-black/90">
+              <img src={monadLogo} alt="Monad logo" className="w-12 h-12 mb-4" />
+              <h3 className="text-xl font-semibold text-white">Monad</h3>
             </Card>
             {/* Neon */}
             <Card className="p-6 flex flex-col items-center bg-black/80 backdrop-blur-sm border border-white/10 hover:scale-105 transition-transform hover:bg-black/90">
