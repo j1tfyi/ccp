@@ -4,7 +4,7 @@
     "@familyboat/deno-fetch-mirror": "jsr:@familyboat/deno-fetch-mirror@^0.1.0"
   },
   "deploy": {
-    "project": "e5ef0b31-ab33-49ae-86f6-a4b5f0db9522",
+    "project": "j1ccp",
     "exclude": [
       "**/node_modules"
     ],
