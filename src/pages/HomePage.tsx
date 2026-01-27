@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { VideoBackground } from "../components/VideoBackground";
 import { trackVisitor } from "../utils/visitorTracker";
@@ -48,6 +48,7 @@ declare global {
 export default function HomePage() {
   const navigate = useNavigate();
   const widgetContainerRef = useRef<HTMLDivElement>(null);
+  const [widgetReady, setWidgetReady] = useState(false);
   // Temporarily disabled CDP hooks
   // const { isSignedIn } = useIsSignedIn();
   // const { isInitialized } = useIsInitialized();
@@ -156,12 +157,15 @@ export default function HomePage() {
             setTimeout(() => {
               if (window.deBridge && widgetContainerRef.current) {
                 window.deBridge.widget(config);
+                // Delay showing to allow styles to apply
+                setTimeout(() => setWidgetReady(true), 200);
               }
             }, 100);
           };
           document.body.appendChild(script);
         } else if (widgetContainerRef.current) {
           window.deBridge.widget(config);
+          setTimeout(() => setWidgetReady(true), 200);
         }
       } catch (err) {
         console.error('Failed to load widget config:', err);
@@ -645,7 +649,11 @@ export default function HomePage() {
             {/* Widget Container - Same as Portal Page */}
             <div id="portal-widget" className="scroll-mt-20">
               <div className="w-full bg-background/50 p-1 rounded-lg border border-border/40 relative min-h-[600px]">
-                <div id="debridgeWidget" ref={widgetContainerRef}></div>
+                <div
+                  id="debridgeWidget"
+                  ref={widgetContainerRef}
+                  style={{ opacity: widgetReady ? 1 : 0, transition: 'opacity 0.3s ease' }}
+                ></div>
 
                 <div className="mt-6 text-center">
                   <div className="inline-flex items-center gap-2 px-4 py-2 bg-primary/10 rounded-full border border-primary/20 mb-4">
