@@ -7,7 +7,6 @@
     "dev": "npx vite",
     "build": "npx vite build && mkdir -p dist/public && cp public/*.png public/*.ico dist/public/ 2>/dev/null || true && cp public/*.mp4 public/*.mov public/*.webm dist/ 2>/dev/null || true",
     "build:bridge": "cd bridge-react-app && npm run build",
-    "vercel-build": "npm run build && npm run build:bridge",
     "preview": "npx vite preview",
     "lint": "eslint . --ext js,jsx,ts,tsx --max-warnings 0",
     "postinstall": "cd bridge-react-app && npm install --legacy-peer-deps",
